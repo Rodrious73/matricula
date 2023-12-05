@@ -15,9 +15,9 @@ $(document).ready(function () {
             }
         ],
         columnDefs: [
-            { orderable: false, targets: [4] } 
+            {orderable: false, targets: [4]}
         ],
-        pageLength: 5, 
+        pageLength: 5,
         lengthMenu: [5, 10, 25, 50, 100],
         language: {
             url: "https://cdn.datatables.net/plug-ins/1.10.25/i18n/Spanish.json"
@@ -194,3 +194,16 @@ function agregarAlumno(codigo, nombres, apPaterno, apMaterno) {
 
     $('#modalAgregar').modal('hide');
 }
+
+
+$("#btnGenerarPdf").click(function () {
+    $.ajax({
+        url: 'generarpdf',
+        type: 'GET',
+        error: function (xhr, status, error) {
+            console.error('Error al generar el PDF:', error);
+            console.log('Estado de la solicitud:', status);
+            console.log('Respuesta del servidor:', xhr.responseText);
+        }
+    });
+});

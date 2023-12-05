@@ -8,6 +8,22 @@
         <servlet-name>AlumnoCRUD</servlet-name>
         <servlet-class>servlet.AlumnoCRUD</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GenerarPdf</servlet-name>
+        <servlet-class>servlet.GenerarPdf</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Matricula</servlet-name>
+        <servlet-class>servlet.Matricula</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AulaCRUD</servlet-name>
+        <servlet-class>servlet.AulaCRUD</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>rptMatricula</servlet-name>
+        <servlet-class>servlet.rptMatricula</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Validar</servlet-name>
         <url-pattern>/validar</url-pattern>
@@ -15,6 +31,22 @@
     <servlet-mapping>
         <servlet-name>AlumnoCRUD</servlet-name>
         <url-pattern>/alumnocrud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GenerarPdf</servlet-name>
+        <url-pattern>/generarpdf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Matricula</servlet-name>
+        <url-pattern>/matricula</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AulaCRUD</servlet-name>
+        <url-pattern>/aulacrud</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>rptMatricula</servlet-name>
+        <url-pattern>/rptmatricula</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
